@@ -35,7 +35,7 @@ The project utilizes several powerful libraries for optimal performance and a se
 
 ## Live Preview
 
-[Live Demo](https://vanvalera.github.io/react-phone-catalog-ts/)
+[Live Demo](https://vanvalera.github.io/react-phone-catalog/)
 
 ## Design Mockup
 
