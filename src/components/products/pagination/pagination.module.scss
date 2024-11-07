@@ -2,6 +2,7 @@
 
 .pagination {
   display: flex;
+  justify-content: center;
   transition: all $animation;
   &_button {
     width: 32px;
