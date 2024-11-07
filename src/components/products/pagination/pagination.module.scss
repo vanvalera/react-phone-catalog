@@ -1,6 +1,7 @@
 @import '../../../styles/main';
 
 .pagination {
+  display: flex;
   transition: all $animation;
   &_button {
     width: 32px;

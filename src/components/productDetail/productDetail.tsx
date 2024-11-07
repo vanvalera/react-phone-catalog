@@ -140,10 +140,6 @@ export const ProductDetail: React.FC = () => {
     dispatch(setName(selectedProduct.name));
   }
 
-  // if (!selectedProduct) {
-  //   return <p>Продукт не найден. Пожалуйста, проверьте URL.</p>;
-  // }
-
   const handleCapacityClick = (capacity: string) => {
     const select = selectedProduct?.id;
     const memory = capacity.toLocaleLowerCase();
@@ -310,8 +306,24 @@ export const ProductDetail: React.FC = () => {
                           onClick={() => handleColorClick(color)}
                           className={styles.product_colors_link}
                           style={{
-                            backgroundColor:
-                              color === 'midnight' ? 'black' : color,
+                            backgroundColor: (() => {
+                              switch (color) {
+                                case 'midnight':
+                                  return 'black';
+                                case 'spaceblack':
+                                  return 'black';
+                                case 'graphite':
+                                  return 'black';
+                                case 'space gray':
+                                  return 'black';
+                                case 'sierrablue':
+                                  return 'blue';
+
+                                default:
+                                  return color;
+                              }
+                            })(),
+                            color,
                           }}
                         ></span>
                       </li>
