@@ -101,6 +101,7 @@
   }
 
   &_link {
+    transition: all $animation;
     border-bottom: 3px solid #fff;
     text-decoration: none;
     height: 100%;
@@ -113,6 +114,10 @@
     color: #89939a;
     display: flex;
     align-items: center;
+
+    &:hover {
+      color: #313237;
+    }
   }
 
   &_nav {

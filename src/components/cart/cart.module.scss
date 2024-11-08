@@ -247,7 +247,10 @@
   }
 
   &_quantity {
-    min-width: 9px;
+    display: flex;
+    justify-content: center;
+    min-width: 16px;
+    max-width: 16px;
     align-self: center;
   }
 
